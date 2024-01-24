@@ -162,6 +162,8 @@
     "cross-env": "6.0.3",
     "css-loader": "3.4.2",
     "dotenv-webpack": "4.0.0",
+    "electron-builder": "20.0.0",
+    "electron-webpack": "^2.8.2",
     "eslint": "7.8.1",
     "eslint-config-prettier": "6.11.0",
     "eslint-plugin-import": "2.22.0",
@@ -248,7 +250,8 @@
     "node:scripts:tsc": "tsc --project tsconfig.scripts.json",
     "translations:extract": "npm run node:scripts:tsc && node node-scripts/translations/translations-extract.js",
     "validate": "npm-run-all --parallel lint:styles lint:code lint:format tscheck",
-    "validate:codecov": "curl --data-binary @codecov.yml https://codecov.io/validate"
+    "validate:codecov": "curl --data-binary @codecov.yml https://codecov.io/validate",
+    "compile": "electron-webpack"
   },
   "resolutions": {
     "@storybook/**/@emotion/sheet": "1.0.1"
@@ -263,11 +266,5 @@
       "prettier --write",
       "git add"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && yarn tscheck",
-      "pre-push": "yarn test"
-    }
   }
 }

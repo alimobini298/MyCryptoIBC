@@ -19,7 +19,7 @@ export const fAccounts: StoreAccount[] = [
     assets: [
       {
         uuid: '356a192b-7913-504c-9457-4d18c28d46e6' as TUuid,
-        name: 'Ether',
+        name: 'IBC',
         networkId: 'Ethereum',
         type: 'base',
         ticker: 'ETH' as TTicker,
@@ -205,7 +205,7 @@ export const fAccounts: StoreAccount[] = [
     assets: [
       {
         uuid: '356a192b-7913-504c-9457-4d18c28d46e6' as TUuid,
-        name: 'Ether',
+        name: 'IBC',
         networkId: 'Ethereum',
         type: 'base',
         ticker: 'ETH' as TTicker,

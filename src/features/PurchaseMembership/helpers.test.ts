@@ -25,7 +25,7 @@ const payload: MembershipSimpleTxFormFull = {
 describe('createApproveTx()', () => {
   it('can create valid approveTx from membership tx params created from the purchase membership form', () => {
     const expected = {
-      chainId: 1,
+      chainId: 1363,
       data:
         '0x095ea7b3000000000000000000000000ee2b7864d8bc731389562f820148e372f57571d80000000000000000000000000000000000000000000000056bc75e2d63100000',
       from: '0xfE5443FaC29fA621cFc33D41D1927fd0f5E0bB7c',
@@ -40,7 +40,7 @@ describe('createApproveTx()', () => {
 describe('createPurchaseTx()', () => {
   it('can create valid purchaseTx for a 12 month dai membership', () => {
     const expected = {
-      chainId: 1,
+      chainId: 1363,
       data:
         '0x3f33133a0000000000000000000000000000000000000000000000056bc75e2d63100000000000000000000000000000fe5443fac29fa621cfc33d41d1927fd0f5e0bb7c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000800000000000000000000000000000000000000000000000000000000000000000',
       from: '0xfE5443FaC29fA621cFc33D41D1927fd0f5E0bB7c',

@@ -104,7 +104,7 @@ export const fFinishedERC20Web3TxReceipt = toTxReceipt(
 export const fTxReceiptEIP1559 = toTxReceipt(txReceiptEIP1559) as IPendingTxReceipt;
 
 export const fDerivedApprovalTx: DistributiveOmit<ITxObject, 'nonce' | 'gasLimit'> = {
-  chainId: 1,
+  chainId: 1363,
   data: '0x095ea7b3000000000000000000000000221657776846890989a759ba2973e427dff5c9bb0000000000000000000000000000000000000000000000004563918244f40000' as ITxData,
   from: '0xfE5443FaC29fA621cFc33D41D1927fd0f5E0bB7c' as ITxFromAddress,
   gasPrice: '0x12a05f200' as ITxGasPrice,
@@ -118,7 +118,7 @@ export const fDerivedRepMigrationTx: DistributiveOmit<ITxObject, 'nonce' | 'gasL
   value: '0x0' as ITxValue,
   data: '0x75d9aa1a' as ITxData,
   gasPrice: '0x12a05f200' as ITxGasPrice,
-  chainId: 1
+  chainId: 1363
 };
 
 export const fDerivedGolemMigrationTx: DistributiveOmit<ITxObject, 'nonce' | 'gasLimit'> = {
@@ -127,7 +127,7 @@ export const fDerivedGolemMigrationTx: DistributiveOmit<ITxObject, 'nonce' | 'ga
   value: '0x0' as ITxValue,
   data: '0x454b06080000000000000000000000000000000000000000000000004563918244f40000' as ITxData,
   gasPrice: '0x12a05f200' as ITxGasPrice,
-  chainId: 1
+  chainId: 1363
 };
 
 export const fSignedTx =

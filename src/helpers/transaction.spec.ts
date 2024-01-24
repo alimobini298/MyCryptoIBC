@@ -390,14 +390,14 @@ describe('appendSender', () => {
       to: senderAddr,
       value: '0x0' as ITxValue,
       data: '0x0' as ITxData,
-      chainId: 1
+      chainId: 1363
     };
     const actual = appendSender(senderAddr)(input);
     const expected = {
       to: senderAddr,
       value: '0x0',
       data: '0x0',
-      chainId: 1,
+      chainId: 1363,
       from: senderAddr
     };
     expect(actual).toStrictEqual(expected);
@@ -410,7 +410,7 @@ describe('appendGasLimit', () => {
       to: senderAddr,
       value: '0x0' as ITxValue,
       data: '0x0' as ITxData,
-      chainId: 1,
+      chainId: 1363,
       gasPrice: '0x4a817c800' as ITxGasPrice
     };
     const actual = await appendGasLimit(fNetworks[0])(input);
@@ -418,7 +418,7 @@ describe('appendGasLimit', () => {
       to: senderAddr,
       value: '0x0',
       data: '0x0',
-      chainId: 1,
+      chainId: 1363,
       gasLimit: '0x5208',
       gasPrice: '0x4a817c800'
     };
@@ -430,7 +430,7 @@ describe('appendGasLimit', () => {
       to: senderAddr,
       value: '0x0' as ITxValue,
       data: '0x0' as ITxData,
-      chainId: 1,
+      chainId: 1363,
       gasPrice: '0x4a817c800' as ITxGasPrice,
       gasLimit: '0x5208' as ITxGasLimit
     };
@@ -439,7 +439,7 @@ describe('appendGasLimit', () => {
       to: senderAddr,
       value: '0x0',
       data: '0x0',
-      chainId: 1,
+      chainId: 1363,
       gasLimit: '0x5208',
       gasPrice: '0x4a817c800'
     };
@@ -453,14 +453,14 @@ describe('appendGasPrice', () => {
       to: senderAddr,
       value: '0x0' as ITxValue,
       data: '0x0' as ITxData,
-      chainId: 1
+      chainId: 1363
     };
     const actual = await appendGasPrice(fNetworks[0])(input);
     const expected = {
       to: senderAddr,
       value: '0x0',
       data: '0x0',
-      chainId: 1,
+      chainId: 1363,
       gasPrice: '0x4a817c800'
     };
     expect(actual).toStrictEqual(expected);
@@ -472,14 +472,14 @@ describe('appendGasPrice', () => {
       value: '0x0' as ITxValue,
       data: '0x0' as ITxData,
       gasPrice: '0x2540be400' as ITxGasPrice,
-      chainId: 1
+      chainId: 1363
     };
     const actual = await appendGasPrice(fNetworks[0])(input);
     const expected = {
       to: senderAddr,
       value: '0x0',
       data: '0x0',
-      chainId: 1,
+      chainId: 1363,
       gasPrice: '0x2540be400'
     };
     expect(actual).toStrictEqual(expected);
@@ -492,7 +492,7 @@ describe('appendNonce', () => {
       to: senderAddr,
       value: '0x0' as ITxValue,
       data: '0x0' as ITxData,
-      chainId: 1,
+      chainId: 1363,
       gasPrice: '0x4a817c800' as ITxGasPrice,
       gasLimit: '0x5208' as ITxGasLimit,
       from: senderAddr
@@ -502,7 +502,7 @@ describe('appendNonce', () => {
       to: senderAddr,
       value: '0x0' as ITxValue,
       data: '0x0' as ITxData,
-      chainId: 1,
+      chainId: 1363,
       gasPrice: '0x4a817c800' as ITxGasPrice,
       gasLimit: '0x5208' as ITxGasLimit,
       from: senderAddr,
@@ -519,7 +519,7 @@ describe('verifyTransaction', () => {
         to: '0x4bbeEB066eD09B7AEd07bF39EEe0460DFa261520',
         value: BigNumber.from('0x0'),
         data: '0x',
-        chainId: 1,
+        chainId: 1363,
         gasLimit: BigNumber.from('0x5208'),
         gasPrice: BigNumber.from('0x1'),
         nonce: 1,
@@ -540,7 +540,7 @@ describe('verifyTransaction', () => {
         to: '0x4bbeEB066eD09B7AEd07bF39EEe0460DFa261520',
         value: BigNumber.from('0x0'),
         data: '0x',
-        chainId: 1,
+        chainId: 1363,
         gasLimit: BigNumber.from('0x5208'),
         gasPrice: BigNumber.from('0x1'),
         nonce: 1,
@@ -557,7 +557,7 @@ describe('verifyTransaction', () => {
         to: '0x4bbeEB066eD09B7AEd07bF39EEe0460DFa261520',
         value: BigNumber.from('0x0'),
         data: '0x',
-        chainId: 1,
+        chainId: 1363,
         gasLimit: BigNumber.from('0x5208'),
         gasPrice: BigNumber.from('0x1'),
         nonce: 1,
@@ -574,7 +574,7 @@ describe('verifyTransaction', () => {
         to: '0x4bbeEB066eD09B7AEd07bF39EEe0460DFa261520',
         value: BigNumber.from('0x0'),
         data: '0x',
-        chainId: 1,
+        chainId: 1363,
         gasLimit: BigNumber.from('0x5208'),
         gasPrice: BigNumber.from('0x1'),
         nonce: 1,
@@ -591,7 +591,7 @@ describe('verifyTransaction', () => {
         to: '0x4bbeEB066eD09B7AEd07bF39EEe0460DFa261520',
         value: BigNumber.from('0x0'),
         data: '0x',
-        chainId: 1,
+        chainId: 1363,
         gasLimit: BigNumber.from('0x5208'),
         gasPrice: BigNumber.from('0x1'),
         nonce: 1

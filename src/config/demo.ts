@@ -248,7 +248,7 @@ export const DEMO_SETTINGS = {
         },
         {
           ticker: 'ETH',
-          name: 'Ether (Ethereum)',
+          name: 'IBC (IBC)',
           decimal: 18,
           support: {},
           social: {},
@@ -1281,7 +1281,7 @@ export const DEMO_SETTINGS = {
         },
         {
           ticker: 'ETH',
-          name: 'Ether (Ethereum)',
+          name: 'IBC (IBCS)',
           decimal: 18,
           support: {},
           social: {},
@@ -1943,7 +1943,7 @@ export const DEMO_SETTINGS = {
         },
         {
           ticker: 'ETH',
-          name: 'Ether (Ethereum)',
+          name: 'IBC (IBC)',
           decimal: 18,
           support: {},
           social: {},
@@ -2156,7 +2156,7 @@ export const DEMO_SETTINGS = {
         },
         {
           ticker: 'ETH',
-          name: 'Ether (Ethereum)',
+          name: 'IBC (IBC)',
           decimal: 18,
           support: {},
           social: {},

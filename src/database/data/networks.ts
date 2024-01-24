@@ -54,10 +54,10 @@ export type NetworkConfig = {
 export const NETWORKS_CONFIG: NetworkConfig = {
   Ethereum: {
     id: DEFAULT_NETWORK, // Ethereum Network Id
-    name: 'Ethereum',
-    baseUnitName: 'Ether',
+    name: 'IBC',
+    baseUnitName: 'IBC',
     unit: DEFAULT_NETWORK_TICKER,
-    chainId: 1,
+    chainId: 1363,
     isCustom: false,
     color: '#007896',
     blockExplorer: makeExplorer({

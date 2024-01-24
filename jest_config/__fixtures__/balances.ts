@@ -41,8 +41,8 @@ export const fBalances: Balance[] = [
   },
   {
     id: 'Ether-ETH',
-    name: 'Ether',
-    ticker: 'ETH',
+    name: 'IBC',
+    ticker: 'IBC',
     uuid: 'f7e30bbe-08e2-41ce-9231-5236e6aab702' as TUuid,
     amount: '0.000000000000000001',
     fiatValue: '0.000000000000000001',

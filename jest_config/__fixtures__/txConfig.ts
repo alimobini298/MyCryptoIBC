@@ -112,7 +112,7 @@ export const fApproveErc20TxConfig = {
   },
   baseAsset: { ...fAssets[0], balance: BigNumber.from('0x1b9ced41465be000') },
   rawTransaction: {
-    chainId: 1,
+    chainId: 1363,
     data: '0x095ea7b3000000000000000000000000221657776846890989a759ba2973e427dff5c9bb0000000000000000000000000000000000000000000000004563918244f40000' as ITxData,
     from: '0xfE5443FaC29fA621cFc33D41D1927fd0f5E0bB7c' as ITxFromAddress,
     gasLimit: '0x249f0' as ITxGasLimit,
@@ -144,7 +144,7 @@ export const fTokenMigrationTxConfig = {
   baseAsset: { ...fAssets[0], balance: BigNumber.from('0x1b9ced41465be000') },
   from: '0xfE5443FaC29fA621cFc33D41D1927fd0f5E0bB7c',
   rawTransaction: {
-    chainId: 1,
+    chainId: 1363,
     data: '0x75d9aa1a',
     from: '0xfE5443FaC29fA621cFc33D41D1927fd0f5E0bB7c',
     gasLimit: '0x249f0',

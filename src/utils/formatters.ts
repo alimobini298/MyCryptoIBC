@@ -17,7 +17,7 @@ export const buildEIP681TokenRequest = (
   decimal: number
 ) =>
   `ethereum:${contractAddr}${
-    chainId !== 1 ? `@${chainId}` : ''
+    chainId !== 1363 ? `@${chainId}` : ''
   }/transfer?address=${recipientAddr}&uint256=${toTokenBase(tokenValue, decimal)}`;
 
 // Regex modified from this stackoverflow answer

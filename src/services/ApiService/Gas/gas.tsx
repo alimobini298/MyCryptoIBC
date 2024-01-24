@@ -66,7 +66,7 @@ export function fetchGasEstimates(): Promise<GasEstimates> {
     .then((res: RawGasEstimates) => ({
       ...res,
       time: Date.now(),
-      chainId: 1,
+      chainId: 1363,
       isDefault: false
     }));
 }

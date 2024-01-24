@@ -38,7 +38,7 @@ export const fDAI: ExtendedAsset = {
 export const fAssets = [
   {
     uuid: '356a192b-7913-504c-9457-4d18c28d46e6',
-    name: 'Ether',
+    name: 'IBC',
     networkId: 'Ethereum',
     type: 'base',
     ticker: 'ETH',
@@ -199,7 +199,7 @@ export const fStoreAssets = [
   },
   {
     uuid: 'f7e30bbe-08e2-41ce-9231-5236e6aab702',
-    name: 'Ether',
+    name: 'IBC',
     networkId: 'Ethereum',
     type: 'base',
     ticker: 'ETH',

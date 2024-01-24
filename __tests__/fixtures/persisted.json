@@ -1023,8 +1023,8 @@
             "uuid": "ef94a882-3af7-5887-89f0-be9833c6b071",
             "network": {
               "id": "Ethereum",
-              "name": "Ethereum",
-              "chainId": 1,
+              "name": "IBC",
+              "chainId": 1363,
               "isCustom": false,
               "color": "#007896",
               "gasPriceSettings": {
@@ -1175,8 +1175,8 @@
             "uuid": "5038d1b0-9afb-597f-8a0f-0f879390873f",
             "network": {
               "id": "Ethereum",
-              "name": "Ethereum",
-              "chainId": 1,
+              "name": "IBC",
+              "chainId": 1363,
               "isCustom": false,
               "color": "#007896",
               "gasPriceSettings": {
@@ -1327,8 +1327,8 @@
             "uuid": "5034876a-d91c-5b4b-9851-cce700717e4b",
             "network": {
               "id": "Ethereum",
-              "name": "Ethereum",
-              "chainId": 1,
+              "name": "IBC",
+              "chainId": 1363,
               "isCustom": false,
               "color": "#007896",
               "gasPriceSettings": {
@@ -1479,8 +1479,8 @@
             "uuid": "7b9d75ac-ddfd-51bb-a9b8-30e3266fa075",
             "network": {
               "id": "Ethereum",
-              "name": "Ethereum",
-              "chainId": 1,
+              "name": "IBC",
+              "chainId": 1363,
               "isCustom": false,
               "color": "#007896",
               "gasPriceSettings": {
@@ -1631,8 +1631,8 @@
             "uuid": "faceb7fa-2551-561d-8374-3cfcb7fd9cf8",
             "network": {
               "id": "Ethereum",
-              "name": "Ethereum",
-              "chainId": 1,
+              "name": "IBC",
+              "chainId": 1363,
               "isCustom": false,
               "color": "#007896",
               "gasPriceSettings": {
@@ -1783,8 +1783,8 @@
             "uuid": "4a236c90-b722-5e26-8718-659db6b5d302",
             "network": {
               "id": "Ethereum",
-              "name": "Ethereum",
-              "chainId": 1,
+              "name": "IBC",
+              "chainId": 1363,
               "isCustom": false,
               "color": "#007896",
               "gasPriceSettings": {

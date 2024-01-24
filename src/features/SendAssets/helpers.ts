@@ -60,7 +60,7 @@ const createBaseTxObject = (formData: IFormikFields): ITxObject => {
     data: formData.txDataField ? (formData.txDataField as ITxData) : ('0x0' as ITxData),
     gasLimit: inputGasLimitToHex(formData.gasLimitField),
     nonce: inputNonceToHex(formData.nonceField),
-    chainId: network.chainId ? network.chainId : 1
+    chainId: network.chainId ? network.chainId : 1363
   };
 };
 

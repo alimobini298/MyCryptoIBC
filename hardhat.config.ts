@@ -5,7 +5,7 @@ import 'dotenv/config';
 const config: HardhatUserConfig = {
   networks: {
     hardhat: {
-      chainId: 1,
+      chainId: 1363,
       hardfork: 'london',
       forking: {
         url: `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`,

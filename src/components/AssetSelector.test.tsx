@@ -77,7 +77,7 @@ describe('AssetSelector', () => {
 
 const itemProps: ComponentProps<typeof AssetSelectorItem> = {
   ticker: 'ETH' as TTicker,
-  name: 'Ether',
+  name: 'IBC',
   uuid: ETHUUID as TUuid,
   onClick: jest.fn()
 };

@@ -17,7 +17,7 @@ describe('serializeAccount()', () => {
         balance: '1989726000000000000',
         decimal: 18,
         isCustom: false,
-        name: 'Ether',
+        name: 'IBC',
         networkId: 'Ethereum',
         ticker: 'ETH',
         type: 'base',

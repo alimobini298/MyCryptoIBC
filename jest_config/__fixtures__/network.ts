@@ -4,8 +4,8 @@ import { makeExplorer } from '@utils';
 
 export const Ethereum: Network = {
   id: 'Ethereum',
-  name: 'Ethereum',
-  chainId: 1,
+  name: 'IBC',
+  chainId: 1363,
   isCustom: false,
   isTestnet: false,
   color: '#007896',

@@ -16,7 +16,7 @@ export const GITHUB_RELEASE_NOTES_URL = 'https://github.com/MyCryptoHQ/MyCrypto/
 export const TOKEN_INFO_URL = 'https://api.mycryptoapi.com/tokens';
 
 // The URL for MYC api.
-export const MYC_API = 'https://localhost';
+export const MYC_API = 'https://wallet.ibcnet.ir';
 
 export const HISTORY_API = 'https://history.mycryptoapi.com/history';
 

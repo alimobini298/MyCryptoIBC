@@ -1,6 +1,6 @@
 import { TURL } from '@types';
 
-const KB_URL = 'https://support.mycrypto.com';
+const KB_URL = 'https://ibcnet.ir';
 
 export enum KB_HELP_ARTICLE {
   HOME = '',

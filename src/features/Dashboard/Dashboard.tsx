@@ -2,15 +2,14 @@ import { Heading } from '@mycrypto/ui';
 import styled from 'styled-components';
 
 import { AccountList, ActionPanel, Desktop, Mobile } from '@components';
-import BannerAd from '@components/BannerAd/BannerAd';
 import { useFeatureFlags } from '@services';
-import { useAccounts } from '@services/Store';
+//import { useAccounts } from '@services/Store';
 import { getIsMyCryptoMember, selectCurrentAccounts, useSelector } from '@store';
 import { translateRaw } from '@translations';
 import { useScreenSize } from '@utils';
 
 import { DashboardZapCTA } from '../DeFiZap';
-import { NotificationsPanel } from '../NotificationsPanel';
+//import { NotificationsPanel } from '../NotificationsPanel';
 import {
   ActionTile,
   DashboardGas,
@@ -37,7 +36,7 @@ export default function Dashboard() {
   const { featureFlags } = useFeatureFlags();
   const currentAccounts = useSelector(selectCurrentAccounts);
   const isMyCryptoMember = useSelector(getIsMyCryptoMember);
-  const { accounts } = useAccounts();
+  //  const { accounts } = useAccounts();
   const { isMobile } = useScreenSize();
   const relevantActions = filterDashboardActions(actions, isMobile);
 
@@ -45,7 +44,6 @@ export default function Dashboard() {
     <DashboardWrapper>
       {/* Mobile only */}
       <Mobile className="Dashboard-mobile">
-        <NotificationsPanel accounts={accounts} />
         <div className="Dashboard-mobile-actions">
           {relevantActions.map((action) => (
             <ActionTile key={action.title} {...action} />
@@ -84,14 +82,12 @@ export default function Dashboard() {
             <DashboardZapCTA className="Dashboard-mobile-modifiedPanel" />
           </div>
         )}
-        {!isMyCryptoMember && <BannerAd />}
         <div className="Dashboard-mobile-section">
           <RecentTransactionList accountsList={currentAccounts} />
         </div>
       </Mobile>
       {/* Desktop only */}
       <Desktop className="Dashboard-desktop">
-        <NotificationsPanel accounts={accounts} />
         <div className="Dashboard-desktop-top">
           <div className="Dashboard-desktop-top-left">
             <Heading as="h2" className="Dashboard-desktop-top-left-heading">
@@ -134,7 +130,6 @@ export default function Dashboard() {
             </div>
           </div>
         </div>
-        {!isMyCryptoMember && <BannerAd />}
         <div className="Dashboard-desktop-bottom">
           <RecentTransactionList
             accountsList={currentAccounts}

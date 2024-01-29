@@ -16,10 +16,10 @@ const paths = {
 module.exports = {
   // Configuration
   port: 3000,
-  title: 'MyCrypto - Ethereum Wallet Manager',
+  title: 'IBC Network - Ethereum Wallet Manager',
   // description < 200 characters
   description:
-    'Securely manage ALL of your crypto accounts with MyCrypto. Swap, send, and buy crypto with your favorite wallets like Ledger, MetaMask, and Trezor.',
+    'Securely manage ALL of your crypto accounts with IBC Network. Swap, send, and buy crypto with your favorite wallets like Ledger, MetaMask, and Trezor.',
   url: 'https://app.mycrypto.com/',
   type: 'website',
   // img < 5MB

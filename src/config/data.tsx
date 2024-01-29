@@ -30,8 +30,8 @@ export const PROTECTED_TX_MIN_AMOUNT = 5; // 5 dollars minimum fee
 
 export const gasEstimateCacheTime = 60000;
 
-export const SUPPORT_EMAIL = 'support@mycrypto.com';
-export const LATEST_NEWS_URL = 'https://blog.mycrypto.com' as TURL;
+export const SUPPORT_EMAIL = 'support@ibcnet.ir';
+export const LATEST_NEWS_URL = 'https://ibcnet.ir' as TURL;
 export const CRYPTOSCAMDB = 'https://cryptoscamdb.org';
 
 export const DEX_BASE_URLS: Partial<Record<NetworkId, string>> = {

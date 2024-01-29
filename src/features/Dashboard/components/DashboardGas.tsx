@@ -1,29 +1,29 @@
-import React from 'react';
+//import React from 'react';
 
 import BigNumber from 'bignumber.js';
 
 import { Box } from '@components';
-import { ETHUUID } from '@config';
-import { useRates } from '@services/Rates';
+//import { ETHUUID } from '@config';
+//import { useRates } from '@services/Rates';
 import { getBaseFee, getFiatInformation, useSelector } from '@store';
-import { getAssetByUUID } from '@store/asset.slice';
+//import { getAssetByUUID } from '@store/asset.slice';
 import { translateRaw } from '@translations';
-import { TUuid } from '@types';
+//import { TUuid } from '@types';
 import { bigify, formatCurrency, fromWei } from '@utils';
 
 import ActionTile from './ActionTile';
 
 export const DashboardGas = () => {
   const baseFee = useSelector(getBaseFee);
-  const ethAsset = useSelector(getAssetByUUID(ETHUUID as TUuid))!;
-  const { getAssetRate } = useRates();
+  //const ethAsset = useSelector(getAssetByUUID(ETHUUID as TUuid))!;
+  //const { getAssetRate } = useRates();
   const fiat = useSelector(getFiatInformation);
 
   const baseFeeGwei =
     baseFee && bigify(fromWei(baseFee, 'gwei')).integerValue(BigNumber.ROUND_HALF_UP);
   const baseFeeEther = baseFee && bigify(fromWei(baseFee, 'ether'));
 
-  const baseAssetRate = getAssetRate(ethAsset);
+  const baseAssetRate = 1; //getAssetRate(ethAsset);
   const fiatValue =
     baseFeeEther &&
     baseFeeEther

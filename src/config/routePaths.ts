@@ -105,7 +105,7 @@ const PATHS: IRoutePath[] = [
   },
   {
     name: 'MYC_MEMBERSHIP_BUY',
-    title: 'MyCrypto Membership',
+    title: 'IBC Network Membership',
     path: '/membership/buy'
   },
   {
